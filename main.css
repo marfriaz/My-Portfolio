@@ -24,12 +24,10 @@ nav {
   z-index: 10;
 }
 
-.navbar {
-  margin-bottom: 50px;;
-}
 
 header {
   padding: 12%;
+  /* needed? */
   margin-top: 30px;;
 }
 
