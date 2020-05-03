@@ -12,7 +12,7 @@ body {
 
 nav,
 footer {
-  padding: 1% 0;
+  padding: 1%;
   background-color: #aaa;
 }
 
@@ -24,16 +24,83 @@ nav {
   z-index: 10;
 }
 
+.navbar {
+  margin-bottom: 50px;;
+}
+
 header {
-  padding: 12% 0;
+  padding: 12%;
+  margin-top: 30px;;
 }
 
-section {
+.links ul {
+  display: inline;
+  list-style: none;
+}
+
+.links li {
+  display: inline;
+  padding-right: px;
+  padding-left: px;
+}
+
+.name {
+  float: left;
+}
+
+.project {
   min-height: 200px;
-  padding: 6% 0;
-  background-color: #bbb;
+  padding: 6%;
+
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
+.card {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 0.67em;
+  padding: 3%;
 }
+
+.card-block {
+  text-align:left;
+}
+
+.hero-img img {
+  width: 220px;
+  border-radius: 360px;
+}
+
+.card-footer {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.btn {
+  font-size: 1.1em;
+  padding: 5px 16px;
+  min-width: 134px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-light {
+    color: #01213b;
+    background: #ffffff;
+    border: 2px solid #01213b;
+}
+
+.btn-dark {
+    color: white;
+    background: #01213b;
+    border: 2px solid #01213b;
+}
+
+.Demo {
+  margin-left: 2%;
+}
+
