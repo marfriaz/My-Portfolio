@@ -6,14 +6,36 @@
     <meta name="description" content="Marco's About Me, Projects and contact info">
     <title>Marco's Portfolio HTML Wireframe</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://use.fontawesome.com/8d58344977.js"></script>
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
+    <nav class="navbar" role="navigation">
+        <!--Hamburger Icon goes here. Want it -->
+        <div class="mobile-container">
+            <div><h1 class="name">Marco Friaz</h1></div>
+            <div style="margin-left:auto"><i class="fas fa-bars"></i></div>
+        </div>
+        <div class="flex-container">
+            <div><h1 class="name">Marco Friaz</h1></div>
+            <div style="margin-left:auto"><a class="jumper" href=".hero-text" ><button type="button" 
+                class="btn btn-light">About</button></a></div>
+            <div><a class="jumper" href=".hero-text" ><button type="button" 
+                class="btn btn-light">Work</button></a></div>
+            <div><a class="jumper" href=".hero-text" ><button type="button" 
+                class="btn btn-light">Linkedin</button></a></div>
+            <div><a class="jumper" href=".hero-text" ><button type="button" 
+                class="btn btn-light">Github</button></a></div>
+        </div>
+    </div>
+
+        
+    </nav>
     <main role="main">
         <header role="banner">
             <div class="hero-text">
-                <h1>Hero</h1>
-                <h3>About Me</h3>
+                <h1>Hi, I'm Marco,</h1>
+                <h6> Bio & About Me
+                </h6>
             </div>
             <div class="hero-img">
                 <img src="images/Headshot2.png" class="portrait" alt="Portrait of Marco">
@@ -30,8 +52,8 @@
                         <img id="project1-img" class="project-img" src="images/Screenshot1.png">
                     </div>
                     <div class="card-block">
-                        <div class="card-tech"><b>Project:</b></div>
-                        <div class="card-text" role="project-description">
+                        <div class="card-tech"><b>Project1</b></div>
+                        <div class="card-text" role="project-description">Project Description 
                         </div>
                         <div class="card-footer" role="project-links">
                             <div class="github">
@@ -49,6 +71,6 @@
             </div>
         </section>
     </main>
-    <footer role="contact-info">Contact Info</footer>
+    <footer role="contact-info">Email</footer>
 </body>
 </html>
