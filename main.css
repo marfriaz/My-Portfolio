@@ -28,7 +28,9 @@ right: 0;
 z-index: 10;
 }
 
-
+main {
+  margin-top: 30px;;
+}
 header {
 padding: 12%;
 /* needed? */
@@ -184,7 +186,7 @@ margin-block-end: 0.5em;
 }
 
 
-@media (min-width:1000px){
+/* @media (min-width:1000px){
 header {
   display: flex;
   justify-content: space-evenly;
@@ -192,7 +194,4 @@ header {
   margin-top: 5%;
 }
 
-
-
-
-}
+} */
