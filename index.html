@@ -4,22 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Marco's About Me, Projects and contact info">
-    <title>Marco's Portfolio HTML Wireframe</title>
+    <title>Marco's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
-    <script src="https://use.fontawesome.com/8d58344977.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .fa_custom {
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar" role="navigation">
-        <!--Hamburger Icon goes here. Want it -->
         <div class="mobile-container">
             <div><h1 class="name">Marco Friaz</h1></div>
-            <div style="margin-left:auto"><i class="fas fa-bars"></i></div>
+            <div style="margin-left:auto">
+                <button type="button" class="navbar-toggle">
+                    <i class="fa fa-bars fa_custom fa-3x"></i>
+                </button>
+            </div>
         </div>
+
+        <div class="navbar-collapse hide">
+            <div class="mobile-container">
+                <div><a class="jumper" href="#about" ><button type="button" 
+                    class="btn btn-light">About</button></a></div>
+                <div><a class="jumper" href="#portfolio-section" style="color:;">
+                    <button type="button" class="btn btn-dark">Portfolio</button></a></div>
+                <div><a target="_blank" href="https://github.com/marfriaz">
+                    <img src="https://image.flaticon.com/icons/svg/179/179323.svg" alt="Github" width="50" height="50">
+                    </a></div>
+                <div><a target="_blank" href="https://www.linkedin.com/in/marco-friaz/">
+                    <img src="https://image.flaticon.com/icons/svg/1384/1384014.svg" alt="Linkedin" width="50" height="50">
+                    </a></div> 
+            </div>
+        </div>
+
         <div class="flex-container">
             <div><h1 class="name">Marco Friaz</h1></div>
-            <div style="margin-left:auto"><a class="jumper" href=".hero-text" ><button type="button" 
+            <div style="margin-left:auto"><a class="jumper" href="#about" ><button type="button" 
                 class="btn btn-light">About</button></a></div>
-            <div><a class="jumper" href=".portfolio" style="color:;">
+            <div><a class="jumper" href="#portfolio-section">
                 <button type="button" class="btn btn-dark">Portfolio</button></a></div>
             <div><a target="_blank" href="https://github.com/marfriaz">
                 <img src="https://image.flaticon.com/icons/svg/179/179323.svg" alt="Github" width="50" height="50">
@@ -28,17 +53,17 @@
                 <img src="https://image.flaticon.com/icons/svg/1384/1384014.svg" alt="Linkedin" width="50" height="50">
                 </a></div>
         </div>
-    </div>
-
-        
     </nav>
+
     <main role="main">
-        <section class="headline-and-bio" role= ""></section>
-        <header role="banner">
+        <header role="banner" id="about">
             <div class="hero-text">
                 <h1>Hi, I'm Marco,</h1>
                 <h6>a fullstack web developer,<br>student in Thinkful’s Web Dev coding bootcamp <br>and Business Process Analyst in SF.</h6>
-                <h6>I love to create optimal web experiences and I’m curious about the design of everyday things (one of my fav books). When I’m not coding, I’m working my full time job as a Business Process Analyst at Linkedin where I get to be creative in formulating solutions to enhance my Sale Org’s CRM data.
+                <h6>I love to create optimal web experiences and I’m curious about the design of everyday 
+                    things (one of my fav books). When I’m not coding, I’m working my full time job as a 
+                    Business Process Analyst at Linkedin where I get to be creative in formulating 
+                    solutions to enhance my Sale Org’s CRM data.
                 </h6>
             </div>
             <div class="hero-img">
@@ -46,7 +71,7 @@
             </div>
         </header>
 
-        <section class="porfolio" role= "Portfolio">
+        <section class="portfoio" id="portfolio-section" role= "Portfolio">
             <div class="portfolio-intro">
                 <h1>This is my Portfolio</h1>
             </div>
@@ -57,7 +82,13 @@
                     </div>
                     <div class="card-block">
                         <div class="card-tech"><b>Quiz App Project:</b></div>
-                        <div class="card-text" role="project-description">Created a responsive online quiz utilizing <b>HTML, CSS, Javascript and JQuery </b> hosted on Git Pages. The quiz is titled “Pet or Food Quiz” and displays several images consisting of a variety of pets and foods. The quiz taker is asked to identify how many images are either pets or food and is told if their answer is right or wrong after answering. The final landing page lists the quiz taker’s score and provides the option to retake the quiz. 
+                        <div class="card-text" role="project-description"><p>Created a responsive online quiz 
+                            utilizing <b>HTML, CSS, Javascript and JQuery </b> hosted on Git Pages. 
+                            The quiz is titled “Pet or Food Quiz” and displays several images consisting 
+                            of a variety of pets and foods. The quiz taker is asked to identify how many 
+                            images are either pets or food and is told if their answer is right or wrong 
+                            after answering. The final landing page lists the quiz taker’s score and provides 
+                            the option to retake the quiz. </p>
                         </div>
                         <div class="card-footer" role="project-links">
                             <div class="github">
@@ -76,5 +107,7 @@
         </section>
     </main>
     <footer role="contact-info">Email: marfriaz@gmail.com</footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
