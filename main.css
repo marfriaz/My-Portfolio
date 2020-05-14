@@ -34,6 +34,16 @@ padding: 20% 7% 0 7%;
 /* needed? */
 }
 
+.hero-text h1 {
+  font-size: 2.2em;
+}
+
+.hero-text h6,
+.card-text p{
+  font-size: 1em;
+}
+
+
 
 div.mobile-container {
   /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
@@ -44,7 +54,7 @@ div.mobile-container {
   margin-left: 4%;
   margin-right: 4%;
   }
-
+ 
 
 .hide {
   display: none;
@@ -110,7 +120,6 @@ font-size: 1em;
 padding: 2px 10px;
 min-width: 100px;
 text-decoration: none;
-border: none;
 }
 
 .btn-light {
@@ -130,6 +139,20 @@ margin-left: 2%;
 }
 
 
+.about-text {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 0 3% 0 3%;
+}
+
+ul {
+  /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
+display: flex;
+justify-content: space-evenly;
+align-items: center; 
+list-style: none;
+padding-inline-start: 0px;
+}
 
 
 
@@ -140,11 +163,11 @@ margin-left: 2%;
     padding: 5px 16px;
     min-width: 134px;
     text-decoration: none;
-    border: none;
+  
     }
 
 .hero-text {
-  text-align: left;
+  text-align: ;
   width: 800px;
   margin-right: 5%;
 }
@@ -172,7 +195,7 @@ nav {
   justify-content: center;
   align-items: center;
   top: 0;
-  left: 0;
+  : 0;
   right: 0;
   z-index: 10;
 }
@@ -214,6 +237,47 @@ margin-block-end: 0.5em;
     font-size: 1.5em;
   }
 
+  .about-container {
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-item: center; 
+    list-style: none;
+    flex: 1; 
+  }
+.about-me {
+  padding: ;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  list-style: none;
+  flex: 1; 
+}
+
+  .about-text {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    flex: 1; 
+  }
+
+  ul {
+    /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  list-style: none;
+  padding-inline-start: 0px;
+  }
+
+  li {
+    margin-left: 2%;
+  }
+
 }
 
 
@@ -224,5 +288,4 @@ header {
   align-items: center;
   margin-top: 5%;
 }
-
 } */
