@@ -12,8 +12,8 @@ body {
 
 nav,
 footer {
-padding: 1%;
-background-color: #aaa;
+  padding: 1%;
+  background-color: #aaa;
 }
 
 
@@ -35,14 +35,23 @@ padding: 20% 7% 0 7%;
 }
 
 .hero-text h1 {
-  font-size: 2.2em;
+  font-size: 2.5em;
 }
 
 h6,
-p{
+h2,
+p {
   font-size: 1em;
 }
 
+h1 {
+  margin-block-end: 5px;
+}
+
+h6 {
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
 
 
 div.mobile-container {
@@ -81,8 +90,6 @@ margin: 1% 0 1%;
 
 .project {
 min-height: 200px;
-padding: 2%;
-
 }
 
 /*
@@ -92,34 +99,37 @@ set each meach query responsively*/
 .card {
 border: 1px solid #eee;
 border-radius: 5px;
-font-size: 0.67em;
-padding: 3%;
 }
 
 .card-block {
 text-align:left;
 }
 
+.card-text {
+  padding: 3%;
+}
+
 .hero-img img {
-width: 220px;
+width: 150px;
+margin-top: 30px;
 border-radius: 360px;
 }
 
 .card-footer {
-margin: 2%;
-display: flex;
-justify-content: center;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
 }
 
 .project-img {
-width: 100%;
+  width: 100%;
 }
 
 .btn {
-font-size: 1em;
-padding: 2px 10px;
-min-width: 100px;
-text-decoration: none;
+  font-size: 1em;
+  padding: 2px 10px;
+  min-width: 100px;
+  text-decoration: none;
 }
 
 .btn-light {
@@ -135,7 +145,7 @@ text-decoration: none;
 }
 
 .Demo {
-margin-left: 2%;
+  margin-left: 2%;
 }
 
 
@@ -145,115 +155,116 @@ margin-left: 2%;
   padding: 0 3% 0 3%;
 }
 
+.about-me {
+  margin-top: 6%
+}
+
 ul {
   /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
-display: flex;
-justify-content: space-evenly;
-align-items: center; 
-list-style: none;
-padding-inline-start: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; 
+  list-style: none;
+  padding-inline-start: 0px;
 }
+
 
 
 
 @media (min-width: 750px){
 
   .hero-text h1  {
-    font-size: 5em;;
+    font-size: 3em;;
   }
 
-  h6 {
-    font-size: 1.5em;;
-  }
-
+  h6,
+  h2,
   p {
-    font-size: 1.5em;
+    font-size: 1em;;
   }
 
 
+  h1,
+  h6 {
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+  }
 
   .btn {
     font-size: 1.1em;
     padding: 5px 16px;
-    min-width: 134px;
-    text-decoration: none;
-  
+
     }
 
-.hero-text {
-  text-align: ;
-  width: 800px;
-  margin-right: 5%;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  margin-top: 3%;
-}
-
-
-nav {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  : 0;
-  right: 0;
-  z-index: 10;
-}
-
-div.mobile-container {
-  display: none;
-}
-
-
-.name {
-  display: inline;
-}
-
-div.flex-container {
-/*div takes whole width; space left will be divided and but left hand side of margin left auto*/
-display: flex;
-justify-content: space-evenly;
-align-items: center; 
-list-style: none;
-flex: 1; 
-}
-
-
-h1,
-h6 {
-margin-block-start: 0.5em;
-margin-block-end: 0.5em;
-}
-
-
-.project-img,
-.card-text,
-.card-tech {
-  width: 50%;
-  margin:auto;
+  .project_btn {
+    width: 30px;
   }
 
-  .card-block {
-    font-size: 1.5em;
+  .hero-text {
+    margin-right: 5%;
   }
 
-  .about-container {
+  .hero-img img {
+    margin-top: 50px;;
+  }
+
+  header {
     display: flex;
-    margin: 0% 6% 0% 6%;
-    flex-direction: column;
     justify-content: center;
-    align: center; 
+    align-items: center;
+    padding: 5% 0 0 0;
+    margin-top: 3%;
+  } 
+
+
+  nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  div.mobile-container {
+    display: none;
+  }
+
+
+  .name {
+    display: inline;
+  }
+
+  div.flex-container {
+    /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
     list-style: none;
     flex: 1; 
   }
 
-  .about-text {
+
+
+  .project-img {
+  width: 50%;
+  margin:auto;
+  }
+
+
+  .about-container,
+  .card {
+    display: flex;
+    margin: 0% 6% 0% 6%;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    flex: 1; 
+  }
+
+  .about-text,
+  .card-text {
     padding: 0 10%;
     display: flex;
     justify-content: center;
@@ -264,11 +275,11 @@ margin-block-end: 0.5em;
 
   ul {
     /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  list-style: none;
-  padding-inline-start: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    padding-inline-start: 0px;
   }
 
   li {
@@ -278,11 +289,68 @@ margin-block-end: 0.5em;
 }
 
 
-/* @media (min-width:1000px){
-header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 5%;
-}
-} */
+
+
+@media (min-width:1100px){
+
+  .hero-text h1  {
+    font-size: 6em;;
+  }
+
+  h6,
+  h2,
+  p {
+    font-size: 1.5em;;
+  }
+
+  .hero-img img {
+    width: 250px;
+    border-radius: 360px;
+    margin-top: 100px
+  }
+
+  .about-container, 
+  .card {
+    margin: 0 15%;
+  }
+
+  .btn {
+    font-size: 1.5em;
+  }
+
+  h1.name {
+    font-size: 2em;
+  }
+
+  h1,
+  h6 {
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+  }
+
+  header {
+    margin-top: 0;
+  }
+
+  .about-text,
+  .card-text {
+    padding: 0 6%;
+  }
+
+
+  /* .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-block {
+    width: 100%
+  }
+
+  .project-img {
+    width: 100%
+  } */
+
+
+} 
