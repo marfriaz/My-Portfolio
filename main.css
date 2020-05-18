@@ -44,6 +44,10 @@ p {
   font-size: 1em;
 }
 
+h3 {
+  font-size: 1.5em;
+}
+
 h1 {
   margin-block-end: 5px;
 }
@@ -318,7 +322,7 @@ ul {
     font-size: 1.5em;
   }
 
-  h1.name {
+  h3.name {
     font-size: 2em;
   }
 
