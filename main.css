@@ -3,8 +3,7 @@
 }
 
 body {
-  font-family: "Open Sans",
-  sans-serif; 
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   text-align: center;
   line-height: 1.5;
@@ -16,22 +15,20 @@ footer {
   background-color: #aaa;
 }
 
-
 nav {
-position: fixed;
-/*display: flex;
+  position: fixed;
+  /*display: flex;
 justify-content: center;
 align-items: center; */
-top: 0;
-left: 0;
-right: 0;
-z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
-
 header {
-padding: 20% 7% 0 7%;
-/* needed? */
+  padding: 20% 7% 0 7%;
+  /* needed? */
 }
 
 .hero-text h1 {
@@ -57,43 +54,38 @@ h6 {
   margin-block-end: 5px;
 }
 
-
 div.mobile-container {
   /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
   display: flex;
   justify-content: space-evenly;
-  align-items: center; 
+  align-items: center;
   list-style: none;
   margin-left: 4%;
   margin-right: 4%;
-  }
- 
+}
 
 .hide {
   display: none;
-}  
-  
+}
 
 div.flex-container {
-/*div takes whole width; space left will be divided and but left hand side of margin left auto*/
-display: none;
-margin: 0 3% 0 3%;
+  /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
+  display: none;
+  margin: 0 3% 0 3%;
 }
-
 
 div.flex-container div {
-margin: 10px;
+  margin: 10px;
 }
 
-
 .name {
-/*display: none;*/
-color:white;
-margin: 1% 0 1%;
+  /*display: none;*/
+  color: white;
+  margin: 1% 0 1%;
 }
 
 .project {
-min-height: 200px;
+  min-height: 200px;
 }
 
 /*
@@ -101,12 +93,12 @@ font-size: 6vw
 set each meach query responsively*/
 
 .card {
-border: 1px solid #eee;
-border-radius: 5px;
+  border: 1px solid #eee;
+  border-radius: 5px;
 }
 
 .card-block {
-text-align:left;
+  text-align: left;
 }
 
 .card-text {
@@ -114,9 +106,9 @@ text-align:left;
 }
 
 .hero-img img {
-width: 150px;
-margin-top: 30px;
-border-radius: 360px;
+  width: 150px;
+  margin-top: 30px;
+  border-radius: 360px;
 }
 
 .card-footer {
@@ -152,7 +144,6 @@ border-radius: 360px;
   margin-left: 2%;
 }
 
-
 .about-text {
   border: 1px solid #eee;
   border-radius: 5px;
@@ -160,33 +151,28 @@ border-radius: 360px;
 }
 
 .about-me {
-  margin-top: 6%
+  margin-top: 6%;
 }
 
 ul {
   /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
   display: flex;
   justify-content: space-evenly;
-  align-items: center; 
+  align-items: center;
   list-style: none;
   padding-inline-start: 0px;
 }
 
-
-
-
-@media (min-width: 750px){
-
-  .hero-text h1  {
-    font-size: 3em;;
+@media (min-width: 750px) {
+  .hero-text h1 {
+    font-size: 3em;
   }
 
   h6,
   h2,
   p {
-    font-size: 1em;;
+    font-size: 1em;
   }
-
 
   h1,
   h6 {
@@ -197,8 +183,7 @@ ul {
   .btn {
     font-size: 1.1em;
     padding: 5px 16px;
-
-    }
+  }
 
   .project_btn {
     width: 30px;
@@ -209,7 +194,7 @@ ul {
   }
 
   .hero-img img {
-    margin-top: 50px;;
+    margin-top: 50px;
   }
 
   header {
@@ -218,8 +203,7 @@ ul {
     align-items: center;
     padding: 5% 0 0 0;
     margin-top: 3%;
-  } 
-
+  }
 
   nav {
     position: fixed;
@@ -235,7 +219,6 @@ ul {
     display: none;
   }
 
-
   .name {
     display: inline;
   }
@@ -244,18 +227,15 @@ ul {
     /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
     list-style: none;
-    flex: 1; 
+    flex: 1;
   }
-
-
 
   .project-img {
-  width: 50%;
-  margin:auto;
+    width: 80%;
+    margin: auto;
   }
-
 
   .about-container,
   .card {
@@ -264,7 +244,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     list-style: none;
-    flex: 1; 
+    flex: 1;
   }
 
   .about-text,
@@ -272,48 +252,43 @@ ul {
     padding: 0 10%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     list-style: none;
-    flex: 1; 
+    flex: 1;
   }
 
   ul {
     /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     list-style: none;
     padding-inline-start: 0px;
   }
 
   li {
     margin-left: 2%;
+  }
 }
 
-}
-
-
-
-
-@media (min-width:1100px){
-
-  .hero-text h1  {
-    font-size: 6em;;
+@media (min-width: 1100px) {
+  .hero-text h1 {
+    font-size: 6em;
   }
 
   h6,
   h2,
   p {
-    font-size: 1.5em;;
+    font-size: 1.5em;
   }
 
   .hero-img img {
     width: 250px;
     border-radius: 360px;
-    margin-top: 100px
+    margin-top: 100px;
   }
 
-  .about-container, 
+  .about-container,
   .card {
     margin: 0 15%;
   }
@@ -341,7 +316,6 @@ ul {
     padding: 0 6%;
   }
 
-
   /* .card {
     display: flex;
     justify-content: center;
@@ -355,6 +329,4 @@ ul {
   .project-img {
     width: 100%
   } */
-
-
-} 
+}
