@@ -3,32 +3,29 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   text-align: center;
   line-height: 1.5;
+  display: block;
 }
 
-nav,
+header,
 footer {
   padding: 1%;
   background-color: #aaa;
 }
 
-nav {
+header {
   position: fixed;
-  /*display: flex;
-justify-content: center;
-align-items: center; */
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
 }
 
-header {
+.summary {
   padding: 20% 7% 0 7%;
-  /* needed? */
 }
 
 .hero-text h1 {
@@ -55,7 +52,6 @@ h6 {
 }
 
 div.mobile-container {
-  /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -69,7 +65,6 @@ div.mobile-container {
 }
 
 div.flex-container {
-  /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
   display: none;
   margin: 0 3% 0 3%;
 }
@@ -79,18 +74,14 @@ div.flex-container div {
 }
 
 .name {
-  /*display: none;*/
   color: white;
   margin: 1% 0 1%;
 }
 
 .project {
   min-height: 200px;
+  margin-bottom: 2%;
 }
-
-/*
-font-size: 6vw 
-set each meach query responsively*/
 
 .card {
   border: 1px solid #eee;
@@ -115,6 +106,7 @@ set each meach query responsively*/
   margin: 2%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project-img {
@@ -142,6 +134,7 @@ set each meach query responsively*/
 
 .Demo {
   margin-left: 2%;
+  margin-bottom: 2%;
 }
 
 .about-text {
@@ -155,7 +148,6 @@ set each meach query responsively*/
 }
 
 ul {
-  /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -185,6 +177,10 @@ ul {
     padding: 5px 16px;
   }
 
+  .Demo {
+    margin-left: 2%;
+    margin-bottom: 0%;
+  }
   .project_btn {
     width: 30px;
   }
@@ -197,7 +193,7 @@ ul {
     margin-top: 50px;
   }
 
-  header {
+  .summary {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,9 +201,7 @@ ul {
     margin-top: 3%;
   }
 
-  nav {
-    position: fixed;
-    display: flex;
+  header {
     justify-content: center;
     align-items: center;
     top: 0;
@@ -224,7 +218,6 @@ ul {
   }
 
   div.flex-container {
-    /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -258,7 +251,6 @@ ul {
   }
 
   ul {
-    /*div takes whole width; space left will be divided and but left hand side of margin left auto*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,7 +299,7 @@ ul {
     margin-block-end: 0.1em;
   }
 
-  header {
+  .summary {
     margin-top: 0;
   }
 
@@ -315,18 +307,4 @@ ul {
   .card-text {
     padding: 0 6%;
   }
-
-  /* .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-block {
-    width: 100%
-  }
-
-  .project-img {
-    width: 100%
-  } */
 }
