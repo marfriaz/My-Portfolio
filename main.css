@@ -9,6 +9,10 @@ body {
   line-height: 1.5;
   display: block;
 }
+h2 {
+  padding-top: 40%;
+  margin-top: -40%;
+}
 
 header,
 footer {
@@ -150,6 +154,7 @@ nav.flex-container div {
 ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   padding-inline-start: 0px;
@@ -158,6 +163,11 @@ ul {
 @media (min-width: 750px) {
   .hero-text h1 {
     font-size: 3em;
+  }
+
+  h2 {
+    padding-top: 10%;
+    margin-top: -10%;
   }
 
   h6,
