@@ -64,12 +64,12 @@ div.mobile-container {
   display: none;
 }
 
-div.flex-container {
+.flex-container {
   display: none;
   margin: 0 3% 0 3%;
 }
 
-div.flex-container div {
+nav.flex-container div {
   margin: 10px;
 }
 
@@ -217,7 +217,7 @@ ul {
     display: inline;
   }
 
-  div.flex-container {
+  nav.flex-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
